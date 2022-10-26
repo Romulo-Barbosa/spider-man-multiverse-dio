@@ -1,0 +1,363 @@
+@import url(./reset.css);
+@import url(./global.css);
+@import url(./navigator.css);
+@import url(./rolagem.css);
+
+
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.wrapper .left-column{
+    width: 8%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 6%;
+    left: 1%;
+    right: 1%;
+    top: 0;
+    z-index: 1;
+}
+
+.main-content{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    padding-left: 9%;
+    
+    
+}
+
+.wrapper .main-content-top{
+    height:  100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+
+
+
+.wrapper .main-content .logo img{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    width: 60%;
+
+} 
+
+
+.pills ul{
+display: flex;
+flex-direction: row;
+}
+
+.pills ul li{
+   background-color: var(--primary-color); 
+   color: white;
+   padding: .6% 1.5%;
+   margin: 0 10px;
+   border-radius: 20rem;
+   text-transform: uppercase;
+   
+   
+}
+
+
+.pills ul li>:first-child{
+    margin-left: 0;
+}
+
+
+.description{
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    max-height: 60vh;
+    padding: 2%;
+    border-radius: 10px;
+    overflow: auto;
+    margin-left: 3%;
+}
+
+
+.description .description-text p{
+    color: white;
+    line-height: 170%;
+    text-align: justify;
+    margin: 5px;
+   
+}
+
+.pills{
+    margin-bottom: 20px;
+}
+
+
+a.link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  a.link-button .icon{
+    width: 2rem;
+    height: 2rem;
+    padding: 3px;
+    background-color: var(--primary-color);
+    border: solid 1px white;
+    background-clip: content-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  a.link-button .icon .play-icon{
+    border:solid 7px white;
+    width:0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-right: -7px;
+  }
+  
+  a.link-button .label{
+    margin-left: 10px;
+  }
+
+  .s-links{
+    padding: 2.2% ;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 3%;
+   
+  }
+
+  .s-links ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+
+  .gallery{
+    padding-top: 1%;
+   
+    padding-left: 3%;
+
+  }
+
+  .gallery ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gallery li{
+    margin-left: .5%;
+  }
+
+  .gallery li:first-child{
+    margin-left: 0;
+  }
+
+  .gallery img{
+    width: 70%;
+    border: solid 6px white;
+    border-radius: 15px;
+    margin-bottom: 8%;
+    
+  }
+
+
+
+ .gallery-mobile{
+  display: none;
+ }
+
+.backgroud-spidertobey1{
+  background-image: url(../img/spiderman-tobey/movie-01/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spidertobey2{
+  background-image: url(../img/spiderman-tobey/movie-02/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spidertobey3{
+  background-image: url(../img/spiderman-tobey/movie-03/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spidertom1{
+  background-image: url(../img/spiderman-tom/movie-01/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spidertom2{
+  background-image: url(../img/spiderman-tom/movie-02/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.backgroud-spidertom3{
+  background-image: url(../img/spiderman-tom/movie-03/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spiderandr{
+  background-image: url(../img/spiderman-andrew/movie-01/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroud-spiderandr2{
+  background-image: url(../img/spiderman-andrew/movie-02/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+  @media (max-width: 700px){
+    .pills ul li{
+        font-size: 12px;
+    }
+
+    .description{
+        margin-left: 9%;
+        width: 100vh;
+    }
+
+
+    .gallery{
+        display: none;
+        
+    }
+
+    .s-links{
+        padding-left: 6%;
+        margin-top: 4%;
+        
+    }
+
+    .wrapper .left-column{
+        left: 4%;
+    }
+
+    .wrapper .main-conten-bottom{
+        max-width: 100%;
+    }
+
+  
+    .gallery-mobile{
+      
+      display: flex;
+    
+    
+    
+      
+    
+    
+    }
+    
+    
+    .gallery-mobile img{
+      width: 50%;
+      border: solid 6px white;
+      border-radius: 15px;
+      margin-bottom: 8%;
+     margin-left: 25%;
+    
+      
+  }
+  .gallery-mobile{
+    margin-top: 4%;
+  }
+  }
+
+
+  @media (max-width: 600px){
+    .pills ul li{
+      font-size: 8px;
+  }
+
+ .description{
+  margin: 0 auto;
+  margin-bottom: 5%;
+  height: 40vh;
+ }
+ 
+ .wrapper .main-content .logo img{
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-bottom: 3%;
+  width: 50%;
+
+} 
+
+.s-links{
+  padding-left: 6%;
+  margin-top: 4%;
+  margin: 0 auto;
+  
+}
+
+
+
+.gallery-mobile{
+      
+  display: block;
+
+
+
+  
+
+
+}
+
+
+.gallery-mobile img{
+  width: 50%;
+  border: solid 6px white;
+  border-radius: 15px;
+  margin-bottom: 8%;
+ margin-left: 25%;
+
+
+  
+}
+
+  }
+
+
+
+
+
